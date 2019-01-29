@@ -13,15 +13,16 @@ public class RegistrationHandler implements RequestHandler<RegistrationHandler.R
         return new Response(request.firstName, request.lastName);
     }
 
+
     static class Request{
-        public String lastName;
         public String firstName;
+        public String lastName;
     }
 
 
     static class Response{
-        public String lastName;
         public String firstName;
+        public String lastName;
 
         public Response(String lastName, String firstName) {
             this.lastName = lastName;
