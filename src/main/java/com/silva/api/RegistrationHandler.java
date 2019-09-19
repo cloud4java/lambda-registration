@@ -24,9 +24,10 @@ public class RegistrationHandler implements RequestHandler<RegistrationHandler.R
         public String firstName;
         public String lastName;
 
-        public Response(String lastName, String firstName) {
+        public Response(String firstName, String lastName) {
+			this.firstName = firstName;
             this.lastName = lastName;
-            this.firstName = firstName;
+            
         }
     }
 }
